@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.Solution41Test" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-10-10T15:47:13" hostname="DESKTOP-Q3N1FM0" time="0.02">
+  <properties/>
+  <testcase name="buildOutput_test()" classname="baseline.Solution41Test" time="0.018"/>
+  <testcase name="sortNameList_test()" classname="baseline.Solution41Test" time="0.001"/>
+  <testcase name="readNames_test()" classname="baseline.Solution41Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
