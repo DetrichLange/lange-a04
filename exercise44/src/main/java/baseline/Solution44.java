@@ -26,18 +26,32 @@ public class Solution44 {
     static final Scanner userInput = new Scanner (System.in);
 
     public String promptSearchTerm(){
-
+        System.out.println("What is the product name?");
+        return userInput.next();
     }
 
     public Inventory readJSON() throws IOException {
+        GsonBuilder builder = new GsonBuilder();
+        Gson gson = builder.create();
+        BufferedReader bufferedReader = new BufferedReader(
+                new FileReader("data/exercise44_input.json"));
 
+        Inventory inventory = gson.fromJson(bufferedReader, Inventory.class);
+        bufferedReader.close();
+        return inventory;
     }
 
     public boolean printOutput(Product searchedProduct){
-
+        if (searchedProduct == null) {
+            System.out.println("Sorry, that product was not found in our inventory.");
+            return false;
+        } else {
+            System.out.printf("Name: %s%nPrice: %.2f%nQuantity: %d%n", searchedProduct.getName(), searchedProduct.getPrice(), searchedProduct.getQuantity());
+            return true;
+        }
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Solution44 solutionApp = new Solution44();
 
         //Make a reader for the json file
@@ -53,7 +67,6 @@ public class Solution44 {
                 //If you don't find a matching Product name:
                     //Print that you couldn't find the product, continue the loop.
 
-
         try {
             Inventory myInventory = solutionApp.readJSON();
             while(true) {
@@ -64,17 +77,16 @@ public class Solution44 {
                     break;
                 }
             }
-        }
-        catch(FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch(IOException e) {
             e.printStackTrace();
         }
     }
 }
 
 class Product {
-    private String name = "";
+    //Sonarlint says these could be final, but if this was for an actual inventory system they would probably need
+    //to be changeable.
+    private String name;
     private double price;
     private int quantity;
 
@@ -88,36 +100,29 @@ class Product {
         return quantity;
     }
 
-    public void setQuantity() {
-        this.quantity = quantity;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName() {
-        this.name = name;
     }
 
     public double getPrice() {
         return price;
     }
 
-    public void setPrice() {
-        this.price = price;
-    }
 }
 
 class Inventory {
     private List<Product> products = new ArrayList<>();
-    public Inventory(){}
 
     public void setProduct(int quantity, double price, String name) {
         this.products.add(new Product(quantity, price, name));
     }
 
     public Product searchProductsByName(String searchTerm){
-
+        for(Product product: products) {
+            if(product.getName().equals(searchTerm)){
+                return product;
+            }
+        }
+        return null;
     }
 }
