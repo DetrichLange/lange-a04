@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f682d505-2f51-41ab-aed1-599a05eae923" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../exercise 41/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseline/Solution44.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseline/Solution44.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +169,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/baseline/Solution44.java</url>
-          <line>94</line>
+          <line>93</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
