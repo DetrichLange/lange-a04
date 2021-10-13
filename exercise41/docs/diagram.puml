@@ -1,0 +1,10 @@
+@startuml
+
+class Solution41{
++void main
++List<String> readNames
++String buildOutput
+-void sortNameList
+-void printOutputToFile
+}
+@enduml

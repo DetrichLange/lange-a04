@@ -11,20 +11,60 @@ construct a histogram displaying the words and the frequency, and display the hi
 
 package baseline;
 
+import java.io.IOException;
+import java.nio.file.Paths;
+import java.util.*;
+import java.util.stream.Collectors;
+
 public class Solution46 {
 
-    public static void main(String[] args) {
-        //Make a map
+    public Map<String, Integer> readFileIntoMap(){
+        Map<String, Integer> frequencyMap = new HashMap<>();
 
         //Open the input file as a try-with-resources
+        try(Scanner fileInput = new Scanner(Paths.get("data/exercise46_input.txt"))){
             //while there is more to read:
-                //Read the next word as a string
-                //If that string matches one of the map keys:
-                    //Increase that key's associated value by 1
-                //If that string does not match one of the map keys:
-                    //Add a new entry to the map with the word as key and value as 1
 
-        //Sort the map by value
+            while(fileInput.hasNext()){
+                //Read the next word as a string
+                String nextWord = fileInput.next();
+                //Compare that string to the keys of the map
+                if(frequencyMap.containsKey(nextWord)){
+                    //If that string matches one of the map keys:
+                    //Set the value of that key to +1
+                    frequencyMap.put(nextWord, frequencyMap.get(nextWord)+1);
+                }
+                else{
+                    //If that string does not match one of the map keys:
+                    //Add a new entry to the map with the word as key and value as 1
+                    frequencyMap.put(nextWord, 1);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return frequencyMap;
+    }
+
+    public Map<String, Integer> sortMapByValue(Map<String, Integer> frequencyMap){
+
+        //Make an entry set out of the unsorted map, make a stream out of the entry set,
+        // then collect a new map using the entries sorted by reverse value order.
+        return frequencyMap.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+    }
+
+    public static void main(String[] args) {
+        Solution46 solutionApp = new Solution46();
+
+        //Make a map
+        Map<String, Integer> frequencyMap = solutionApp.readFileIntoMap();
+
+        Map<String, Integer> sortedMap = solutionApp.sortMapByValue(frequencyMap);
+
+        System.out.print(sortedMap.toString());
 
         //For each entry in the map:
             //Print the key, then repeat * a number of times equal to the value
