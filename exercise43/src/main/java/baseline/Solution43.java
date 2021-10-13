@@ -43,7 +43,7 @@ public class Solution43 {
         }
     }
 
-    private void makeDirectory(String whichDirectory){
+    public void makeDirectory(String whichDirectory){
         File newDirectory = new File(whichDirectory);
 
         boolean bool = newDirectory.mkdir();
@@ -76,7 +76,7 @@ public class Solution43 {
         return newFileContents;
     }
 
-    private void makeHTMLFile(String whichFile, String outputString){
+    public void makeHTMLFile(String whichFile, String outputString){
         try(Formatter output = new Formatter(whichFile)) {
             output.format(outputString);
             //Print output statements confirming the created files

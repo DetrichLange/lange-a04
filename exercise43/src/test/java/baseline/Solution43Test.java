@@ -2,6 +2,12 @@ package baseline;
 
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Scanner;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class Solution43Test {
@@ -18,7 +24,12 @@ class Solution43Test {
 
     @Test
     void makeDirectory() {
-        //This method only writes with a given parameter, so no test.
+        //This method attempts to make directories, testing if they exist
+        Solution43 testApp = new Solution43();
+
+        testApp.makeDirectory("data/testdirectory");
+        Path testPath = Paths.get("data/testdirectory");
+        assertTrue(Files.exists(testPath));
     }
 
     @Test
@@ -45,7 +56,15 @@ class Solution43Test {
     }
 
     @Test
-    void makeHTMLFile() {
-        //This method only writes with a given parameter, so no test.
+    void makeHTMLFile() throws IOException {
+        //This method makes a HTML file with a given string for contents and a string for path.
+        Solution43 testApp = new Solution43();
+
+        testApp.makeHTMLFile("data/testHTML", "contents go here");
+        Scanner fileInput = new Scanner(Paths.get("data/testHTML"));
+        String actual = fileInput.nextLine();
+        String expected = "contents go here";
+
+        assertEquals(expected, actual);
     }
 }

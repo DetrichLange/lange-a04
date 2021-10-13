@@ -1,0 +1,14 @@
+@startuml
+
+class Solution43{
+final String DATA
+final Scanner userInput
+
++void main
++void makeDirectory
++String buildFileString
++void makeHTMLFile
+-boolean promptBoolean
+-String promptString
+}
+@enduml
