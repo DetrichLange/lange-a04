@@ -2,6 +2,7 @@ package baseline;
 
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -12,8 +13,18 @@ import static org.junit.jupiter.api.Assertions.*;
 class Solution42Test {
 
     @Test
-    void readEmployees() {
-        //this method only scans and returns, so no test
+    void readEmployees() throws IOException {
+        //this method reads a file as a list of maps
+        Solution42 testApp = new Solution42();
+
+        List<Map<String, String>> testMap = testApp.readEmployees("data/exercise42_input.txt");
+        String actual = testMap.toString();
+        String expected = "[{last name=Ling, first name=Mai, salary=55900}, {last name=Johnson, first name=Jim, " +
+                "salary=56500}, {last name=Jones, first name=Aaron, salary=46000}, {last name=Jones, first name=Chris, " +
+                "salary=34500}, {last name=Swift, first name=Geoffrey, salary=14200}, {last name=Xiong, first name=Fong, " +
+                "salary=65000}, {last name=Zarnecki, first name=Sabrina, salary=51500}]";
+
+        assertEquals(expected, actual);
     }
 
     @Test

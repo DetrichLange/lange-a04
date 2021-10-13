@@ -1,9 +1,11 @@
 @startuml
-'https://plantuml.com/class-diagram
 
-class Solution42 {
-List<Map<String, String>> readEmployees(String inputFile)
-String buildOutput(List<Map<String, String>> listOfEmployees)
+class Solution42{
+final String LNAME
+final String FNAME
+
++void main
++List<Map<String, String>> readEmployees
++String buildOutput
 }
-
 @enduml
