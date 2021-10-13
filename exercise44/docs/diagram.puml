@@ -1,0 +1,30 @@
+@startuml
+
+class Solution41{
++void main
++String promptSearchTerm()
++Inventory readJSON()
++boolean printOutput(Product searchedProduct)
+}
+
+class Product{
+-String name
+-double price
+-int quantity
+
++Product(int quantity, double price, String name)
++int getQuantity()
++String getName()
++double getPrice()
+}
+
+class Inventory{
+-List<Product> products
+
++void setProduct(int quantity, double price, String name)
++Product searchProductsByName(String searchTerm)
+}
+
+Solution41 -- Inventory
+Product --* Inventory
+@enduml

@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f682d505-2f51-41ab-aed1-599a05eae923" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../exercise43/.idea/sonarlint/issuestore/b/4/b4347542199e6f8f4a0c2a06abf7605a025d7459" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise43/.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise43/.idea/sonarlint/issuestore/f/1/f1d4fe943c70db8e17c963b3b283a5d7df2524a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise43/.idea/sonarlint/issuestore/f/f/ffe32549da85cbb99a78b340561cc4c6999961c2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../exercise 41/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise43/src/main/java/baseline/Solution43.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise43/src/main/java/baseline/Solution43.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise43/src/test/java/baseline/Solution43Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise43/src/test/java/baseline/Solution43Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise43/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise43/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/e/5ed8bc95bcdb167ab4dfbdf85c9a8ea80c8aa4ce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cba3fa9d6fef2aa32ea57e972cb61588f705d45e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cfcd15bd9321f4c3f0770cd865d4568c14c53f8e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/baseline/Solution44Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseline/Solution44Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +100,7 @@
       <recent name="baseline" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.exercise44 [run]">
+  <component name="RunManager" selected="Gradle.exercise44 [test]">
     <configuration name="exercise44 [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -136,8 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.exercise44 [run]" />
         <item itemvalue="Gradle.exercise44 [test]" />
+        <item itemvalue="Gradle.exercise44 [run]" />
       </list>
     </recent_temporary>
   </component>

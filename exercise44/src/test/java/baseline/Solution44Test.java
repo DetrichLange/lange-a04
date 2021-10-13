@@ -2,6 +2,8 @@ package baseline;
 
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class Solution44Test {
@@ -12,8 +14,19 @@ class Solution44Test {
     }
 
     @Test
-    void readJSON_test() {
-        //Method only scans, no test.
+    void readJSON_test() throws IOException {
+        //Method reads a JSON file as an object and returns it.
+        Solution44 testApp = new Solution44();
+
+        Inventory testInventory = testApp.readJSON();
+        String actual = testInventory.searchProductsByName("Thing").getName();
+        String expected = "Thing";
+
+        int actual2 = testInventory.searchProductsByName("Thing").getQuantity();
+        int expected2 = 5;
+
+        assertEquals(expected, actual);
+        assertEquals(expected2, actual2);
     }
 
     @Test
