@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f682d505-2f51-41ab-aed1-599a05eae923" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../exercise43/.idea/sonarlint/issuestore/b/4/b4347542199e6f8f4a0c2a06abf7605a025d7459" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise43/.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise43/.idea/sonarlint/issuestore/f/1/f1d4fe943c70db8e17c963b3b283a5d7df2524a2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise43/.idea/sonarlint/issuestore/f/f/ffe32549da85cbb99a78b340561cc4c6999961c2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise 41/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise43/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise43/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/e/5ed8bc95bcdb167ab4dfbdf85c9a8ea80c8aa4ce" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cba3fa9d6fef2aa32ea57e972cb61588f705d45e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cfcd15bd9321f4c3f0770cd865d4568c14c53f8e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise41/.idea/sonarlint/issuestore/2/3/23dda7932a7257896ad81c0fdf8406363173685a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise41/.idea/sonarlint/issuestore/a/7/a7b7fd7319bfb2e7377a9a4572905ac0198ea746" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise41/.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise41/.idea/sonarlint/issuestore/f/1/f1d4fe943c70db8e17c963b3b283a5d7df2524a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise45/docs/diagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise41/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise41/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/baseline/Solution44Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseline/Solution44Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise45/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise45/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise45/.idea/sonarlint/issuestore/7/8/7885da1447b678f57f33933798105c38322ac9d0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise45/.idea/sonarlint/issuestore/7/e/7e18b8f624be772d4d2319e73601cb0e022171c9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise45/.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise45/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise45/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +71,7 @@
       <list>
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="UML Sequence" />
       </list>
     </option>
   </component>
@@ -86,6 +88,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultPlantUmlFileTemplate" value="UML Sequence" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />

@@ -1,0 +1,11 @@
+@startuml
+
+class Solution41{
++void main
++String replaceOneWord(String textToReplace, String oldWord, String newWord)
++void printOutputFile(String filePath, String fileContents)
+-String promptFileName()
+-String readFile(String filePath)
+}
+
+@enduml
