@@ -1,6 +1,14 @@
 @startuml
 
-class Solution41{
+/'
+If I were to expand this program, I would probably have one
+class for reading in a file and modifying it, and a second
+class for printing it out (or maybe three for reading/
+modifying/printing, if there were more possible
+modifications).
+'/
+
+class Solution45{
 +void main
 +String replaceOneWord(String textToReplace, String oldWord, String newWord)
 +void printOutputFile(String filePath, String fileContents)

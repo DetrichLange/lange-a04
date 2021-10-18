@@ -1,0 +1,17 @@
+@startuml
+
+/'
+This exercise is so specific that I'm not sure of a plausible
+way to expand it aside from adding more input options, so
+if I did that I would probably turn file reading into its
+own class.
+'/
+
+class Solution46{
++void main
++Map<String, Integer> readFileIntoMap()
++Map<String, Integer> sortMapByValue(Map<String, Integer> frequencyMap)
++String assembleHistogram(Map<String, Integer> sortedMap)
+}
+
+@enduml

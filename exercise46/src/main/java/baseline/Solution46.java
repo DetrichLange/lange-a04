@@ -56,6 +56,20 @@ public class Solution46 {
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
 
+    public String assembleHistogram(Map<String, Integer> sortedMap){
+        StringBuilder outputString = new StringBuilder();
+
+        Set<String> keys = sortedMap.keySet();
+        String[] keyArray = keys.toArray(new String[0]);
+
+        for(int i=0; i<sortedMap.size(); i++){
+            outputString.append(keyArray[i]).append(":").append(" ".repeat(10 - keyArray[i].length()));
+            outputString.append(" " + "*".repeat(sortedMap.get(keyArray[i])) + "%n");
+        }
+
+        return outputString.toString();
+    }
+
     public static void main(String[] args) {
         Solution46 solutionApp = new Solution46();
 
@@ -64,7 +78,9 @@ public class Solution46 {
 
         Map<String, Integer> sortedMap = solutionApp.sortMapByValue(frequencyMap);
 
-        System.out.print(sortedMap.toString());
+        String outputString = solutionApp.assembleHistogram(sortedMap);
+
+        System.out.printf(outputString);
 
         //For each entry in the map:
             //Print the key, then repeat * a number of times equal to the value
